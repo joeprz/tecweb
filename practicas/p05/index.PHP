@@ -45,8 +45,8 @@ echo "\$a: $a<br/>";
 echo "\$b: $b<br/>";
 echo "\$c: $c<br/>";
 
-echo "<br/>Despues de reasignar y volver a mostrar el contenido a todas las variables se les asigno el texto PHP SERVER<br/>";
-// Liberar variables
+echo "<br/>Despues de reasignar y volver a mostrar el contenido a todas las se les asigno el texto PHP SERVER<br/>";
+// Liberar
 unset($a, $b, $c);
 ?>
 
@@ -67,7 +67,7 @@ $b *= $c;
 echo "\$b: $b<br/>";
 $z[0] = "MySQL";
 print_r($z) ;
-// Liberar variables
+// Liberar
 unset($a, $b, $c, $z);
 ?>
 
@@ -90,6 +90,22 @@ $GLOBALS['z'][0] = "MySQL";
 print_r($GLOBALS['z']);
 
 
-// Liberar variables
+// Liberar
 unset($GLOBALS['a'], $GLOBALS['b'], $GLOBALS['c'], $GLOBALS['z']);
 ?>
+
+<h1>Ejercicio 5</h1>
+<?php
+$a = "7 personas";
+echo "\$a: $a<br/>";
+$b = (integer) $a;
+echo "\$b: $b<br/>";
+$a = "9E3";
+echo "\$a: $a<br/>";
+$c = (double) $a;
+echo "\$c: $c<br/>";
+
+// Liberar
+unset($a, $b, $c);
+?>
+
