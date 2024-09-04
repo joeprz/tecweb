@@ -126,3 +126,14 @@ echo "Valor booleano de e: " . (int)$e . "<br/>";
 // Liberar 
 unset($a, $b, $c, $d, $e, $f);
 ?>
+
+<h1>Ejercicio 7</h1>
+<?php
+echo "Versión: " . $_SERVER['SERVER_SOFTWARE'] . "<br/>";
+echo "Nombre servidor: " . PHP_OS . "<br/>";
+echo "Idioma: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "<br/>";
+
+?>
+
+</body>
+</html>
