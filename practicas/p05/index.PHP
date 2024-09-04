@@ -70,3 +70,26 @@ print_r($z) ;
 // Liberar variables
 unset($a, $b, $c, $z);
 ?>
+
+<h1>Ejercicio 4</h1>
+<?php
+$GLOBALS['a'] = "PHP5";
+echo $GLOBALS['a'] . "<br/>";
+$GLOBALS['z'][] = &$GLOBALS['a'];
+print_r($GLOBALS['z']);
+echo "<br/>";
+$GLOBALS['b'] = "5a version de PHP";
+echo $GLOBALS['b'] . "<br/>";
+$GLOBALS['c'] = $GLOBALS['b'] * 10;
+echo $GLOBALS['c'] . "<br/>";
+$GLOBALS['a'] .= $GLOBALS['b'];
+echo $GLOBALS['a'] . "<br/>";
+$GLOBALS['b'] *= $GLOBALS['c'];
+echo $GLOBALS['b'] . "<br/>";
+$GLOBALS['z'][0] = "MySQL";
+print_r($GLOBALS['z']);
+
+
+// Liberar variables
+unset($GLOBALS['a'], $GLOBALS['b'], $GLOBALS['c'], $GLOBALS['z']);
+?>
