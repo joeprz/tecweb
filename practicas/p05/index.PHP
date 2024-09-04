@@ -25,3 +25,27 @@ echo "\$_element1: $_element1<br/>";
 // Liberar
 unset($_myvar, $_7var, $myvar, $var7, $_element1);
 ?>
+
+
+<h1>Ejercicio 2</h1>
+<?php
+$a = "ManejadorSQL";
+$b = "MySQL";
+$c = &$a;
+
+echo "\$a: $a<br/>";
+echo "\$b: $b<br/>";
+echo "\$c: $c<br/>";
+
+$a = "PHP server";
+$b = &$a;
+
+echo "<br/>Vuelve a mostrar el contenido:<br/>";
+echo "\$a: $a<br/>";
+echo "\$b: $b<br/>";
+echo "\$c: $c<br/>";
+
+echo "<br/>Despues de reasignar y volver a mostrar el contenido a todas las variables se les asigno el texto PHP SERVER<br/>";
+// Liberar variables
+unset($a, $b, $c);
+?>
