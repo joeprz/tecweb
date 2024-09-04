@@ -49,3 +49,24 @@ echo "<br/>Despues de reasignar y volver a mostrar el contenido a todas las vari
 // Liberar variables
 unset($a, $b, $c);
 ?>
+
+ <h1>Ejercicio 3</h1>
+<?php
+$a = "PHP5";
+echo "\$a: $a<br/>";
+$z[] = &$a;
+print_r($z) ;
+echo "<br/>";
+$b = "5a version de PHP";
+echo "\$b: $b<br/>";
+$c = $b * 10;
+echo "\$c: $c<br/>";
+$a .= $b;
+echo "\$a: $a<br/>";
+$b *= $c;
+echo "\$b: $b<br/>";
+$z[0] = "MySQL";
+print_r($z) ;
+// Liberar variables
+unset($a, $b, $c, $z);
+?>
