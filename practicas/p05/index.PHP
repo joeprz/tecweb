@@ -109,3 +109,20 @@ echo "\$c: $c<br/>";
 unset($a, $b, $c);
 ?>
 
+<h1>Ejercicio 6</h1>
+<?php
+$a = "0";
+$b = "TRUE";
+$c = FALSE;
+$d = ($a OR $b);
+$e = ($a AND $c);
+$f = ($a XOR $b);
+
+var_dump($a, $b, $c, $d, $e, $f);
+
+echo "<br/>Valor booleano de c: " . (int)$c . "<br/>";
+echo "Valor booleano de e: " . (int)$e . "<br/>";
+
+// Liberar 
+unset($a, $b, $c, $d, $e, $f);
+?>
