@@ -7,6 +7,14 @@
       ol, ul {
         list-style-type: none;
       }
+      fieldset {
+        border: 2px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      legend {
+        font-weight: bold;
+      }
     </style>
   </head>
 
@@ -18,41 +26,63 @@
     <!-- Inicio del formulario -->
     <form action="http://54.203.246.162/neo/classroom/hw/concurso.php" method="post">
       
-      <p>Información del Participante</p>
+      <!-- Información Personal -->
+      <fieldset>
+        <legend>Información Personal</legend>
+        <ul>
+          <li>Nombre: <input type="text" name="name"></li>
+          <li>Dirección de E-mail: <input type="email" name="email"></li>
+          <li>Número Telefónico: <input type="tel" name="phone"></li>
+          <li>Mis tenis son tan feos porque...<br>
+            <textarea name="reason" rows="4" cols="60" maxlength="250" placeholder="Explica por qué tus tenis son tan feos..."></textarea>
+          </li>
+        </ul>
+      </fieldset>
 
-      <ul>
-        <!-- Campos de entrada de texto -->
-        <li>Nombre: <input type="text" name="name"></li>
-        <li>Dirección de E-mail: <input type="email" name="email"></li>
-        <li>Número Telefónico: <input type="tel" name="phone"></li>
+      <!-- Diseño personalizado del Tenis -->
+      <fieldset>
+        <legend>Diseño personalizado del Tenis</legend>
 
-        <!-- Área de texto multilínea -->
-        <li>Mis tenis son tan feos porque...<br>
-          <textarea name="reason" rows="4" cols="60" maxlength="250" placeholder="Explica por qué tus tenis son tan feos..."></textarea>
-        </li>
-      </ul>
+        <!-- Color -->
+        <fieldset>
+          <legend>Color <em>(escoge uno)</em>:</legend>
+          <ul>
+            <li><input type="radio" name="color" value="red" checked>Rojo</li>
+            <li><input type="radio" name="color" value="blue">Azul</li>
+            <li><input type="radio" name="color" value="black">Negro</li>
+            <li><input type="radio" name="color" value="silver">Plateado</li>
+          </ul>
+        </fieldset>
 
-      <h2>Diseña tus Mike personalizados:</h2>
+        <!-- Características -->
+        <fieldset>
+          <legend>Características <em>(escoge tantas como quieras)</em>:</legend>
+          <ul>
+            <li><input type="checkbox" name="features[]" value="sparkly_laces">Cordones brillantes</li>
+            <li><input type="checkbox" name="features[]" value="metal_logo" checked>Logo metálico</li>
+            <li><input type="checkbox" name="features[]" value="light_up_soles">Suela luminosa</li>
+            <li><input type="checkbox" name="features[]" value="wifi">WiFi integrado</li>
+          </ul>
+        </fieldset>
 
-      <p>Diseño personalizado del Tenis</p>
+        <!-- Talla -->
+        <fieldset>
+          <legend>Talla</legend>
+          <p>Las medidas reflejan el estándar masculino:</p>
+          <select name="size" size="1">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+        </fieldset>
 
-      <p>Color <em>(escoge uno)</em>:</p>
-      <ul>
-        <!-- Botones de radio para seleccionar un solo color -->
-        <li><input type="radio" name="color" value="red" checked>Rojo</li>
-        <li><input type="radio" name="color" value="blue">Azul</li>
-        <li><input type="radio" name="color" value="black">Negro</li>
-        <li><input type="radio" name="color" value="silver">Plateado</li>
-      </ul>
-
-      <p>Características <em>(escoge tantas como quieras)</em>:</p>
-      <ul>
-        <!-- Casillas de verificación para múltiples características -->
-        <li><input type="checkbox" name="features[]" value="sparkly_laces">Cordones brillantes</li>
-        <li><input type="checkbox" name="features[]" value="metal_logo" checked>Logo metálico</li>
-        <li><input type="checkbox" name="features[]" value="light_up_soles">Suela luminosa</li>
-        <li><input type="checkbox" name="features[]" value="wifi">WiFi integrado</li>
-      </ul>
+      </fieldset>
 
       <!-- Botones de submit y reset -->
       <p><input type="submit" value="Enviar registro">
