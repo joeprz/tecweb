@@ -71,6 +71,22 @@ include 'src/funciones.php';
 
         <input type="submit" value="Enviar" />
     </form>
+    <h2>Ejercicio 6 </h2>
 
+<form action="vehiculos.php" method="post">
+    <fieldset>
+        <legend>Consultar por Matrícula</legend>
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required>
+        <button type="submit">Consultar</button>
+    </fieldset>
+</form>
+
+<form action="vehiculos.php" method="post">
+    <fieldset>
+        <legend>Ver Todos los Vehículos</legend>
+        <button type="submit" name="verTodos">Ver Todos</button>
+    </fieldset>
+</form>
 </body>
 </html>
