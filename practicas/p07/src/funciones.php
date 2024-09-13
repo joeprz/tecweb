@@ -5,4 +5,20 @@ function multiplo5y7($numero) {
 }
 
 
+// Ejercicio 2
+function secuencia($i) {
+    $matriz= [];
+    $count = 0;
+    while (true) {
+        $num1 = rand(1, 999);
+        $num2 = rand(1, 999);
+        $num3 = rand(1, 999);
+        $count++;
+        if ($num1 % 2 != 0 && $num2 % 2 == 0 && $num3 % 2 != 0) {
+            $matriz[] = [$num1, $num2, $num3];
+            break;
+        }
+    }
+    return ['matriz' => $matriz, 'i' => $count];
+}
 ?>

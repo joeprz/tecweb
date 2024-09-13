@@ -24,5 +24,16 @@ include 'src/funciones.php';
     }
     ?>
 
+    <h2>Ejercicio 2 </h2>
+    <?php
+    $result = secuencia(3);
+    echo "<p>Secuencia: ";
+    foreach ($result['matriz'] as $row) {
+        echo implode(', ', $row);
+    }
+    echo "</p>";
+    echo "<p>Iteraciones: {$result['i']}</p>";
+    ?>
+
 </body>
 </html>
