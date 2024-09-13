@@ -35,5 +35,16 @@ include 'src/funciones.php';
     echo "<p>Iteraciones: {$result['i']}</p>";
     ?>
 
+
+    <h2>Ejercicio 3</h2>
+    <?php
+    if (isset($_GET['multiple'])) {
+        $multiple = $_GET['multiple'];
+        echo "<p>Multiplo(While): " . random($multiple) . "</p>";
+        echo "<p>Multiplo (Do-While Loop): " . random($multiple) . "</p>";
+    }
+    ?>
+
+    
 </body>
 </html>

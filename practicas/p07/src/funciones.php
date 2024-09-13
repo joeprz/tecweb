@@ -21,4 +21,13 @@ function secuencia($i) {
     }
     return ['matriz' => $matriz, 'i' => $count];
 }
+
+// Ejercicio 3
+function random($multiple) {
+    do {
+        $random = rand(1, 999);
+    } while ($random % $multiple !== 0);
+    return $random;
+}
 ?>
+
