@@ -12,40 +12,38 @@ include 'src/funciones.php';
     <h1>Ejercicios</h1>
 
     <h2>Ejercicio 1</h2>
-
     <?php
     if (isset($_GET['numero'])) {
         $numero = $_GET['numero'];
         if (multiplo5y7($numero)) {
-            echo "<p>$numero es multiplo de 5 y 7</p>";
+            echo "<p>$numero es múltiplo de 5 y 7</p>";
         } else {
-            echo "<p>$numero no es multiplo.</p>";
+            echo "<p>$numero no es múltiplo de 5 y 7.</p>";
         }
     }
     ?>
 
-    <h2>Ejercicio 2 </h2>
+    <h2>Ejercicio 2</h2>
     <?php
-    $result = secuencia(3);
+    $result = secuencia(3); // Llamamos a la función secuencia()
     echo "<p>Secuencia: ";
     foreach ($result['matriz'] as $row) {
-        echo implode(', ', $row);
+        echo implode(', ', $row) . "<br>";
     }
     echo "</p>";
     echo "<p>Iteraciones: {$result['i']}</p>";
     ?>
 
-
     <h2>Ejercicio 3</h2>
     <?php
     if (isset($_GET['multiple'])) {
         $multiple = $_GET['multiple'];
-        echo "<p>Multiplo(While): " . random($multiple) . "</p>";
-        echo "<p>Multiplo (Do-While Loop): " . random($multiple) . "</p>";
+        echo "<p>Multiplo (While): " . random($multiple) . "</p>";
+        echo "<p>Multiplo (Do-While Loop): " . random($multiple, true) . "</p>"; // Puedes pasar un segundo parámetro para diferenciar el bucle
     }
     ?>
 
-     <h2>Ejercicio 4</h2>
+    <h2>Ejercicio 4</h2>
     <table border="1">
         <tr>
             <th>n.</th>
@@ -58,5 +56,21 @@ include 'src/funciones.php';
         }
         ?>
     </table>
+
+    <h1>Ejercicio 5: Validación de Edad y Sexo</h1>
+    <form action="procesar.php" method="POST">
+        <label for="edad">Edad:</label>
+        <input type="number" name="edad" id="edad" required /><br />
+
+        <label for="sexo">Sexo:</label>
+        <select name="sexo" id="sexo" required>
+            <option value="">Seleccione su sexo</option>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+        </select><br />
+
+        <input type="submit" value="Enviar" />
+    </form>
+
 </body>
 </html>
