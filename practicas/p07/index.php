@@ -45,6 +45,18 @@ include 'src/funciones.php';
     }
     ?>
 
-    
+     <h2>Ejercicio 4</h2>
+    <table border="1">
+        <tr>
+            <th>n.</th>
+            <th>Caracter</th>
+        </tr>
+        <?php
+        $ascii_array = arreglo();
+        foreach ($ascii_array as $key => $value) {
+            echo "<tr><td>$key</td><td>$value</td></tr>";
+        }
+        ?>
+    </table>
 </body>
 </html>

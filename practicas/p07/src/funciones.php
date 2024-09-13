@@ -29,5 +29,14 @@ function random($multiple) {
     } while ($random % $multiple !== 0);
     return $random;
 }
-?>
 
+
+// Ejercicio 4
+function arreglo() {
+    $array = [];
+    for ($i = 97; $i <= 122; $i++) {
+        $array[$i] = chr($i);
+    }
+    return $array;
+}
+?>
