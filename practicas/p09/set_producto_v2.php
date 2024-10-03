@@ -31,7 +31,7 @@ if (isset($_POST['nombre'], $_POST['marca'], $_POST['modelo'], $_POST['precio'],
     } else {
         // Insertar nuevo producto
         $stmt = $link->prepare("INSERT INTO productos (nombre, marca, modelo, precio, unidades, detalles, imagen, eliminado) VALUES (?, ?, ?, ?, ?, ?, ?, 0)");
-        $stmt->bind_param("sssdis", $nombre, $marca, $modelo, $precio, $unidades, $detalles, $imagen);
+        $stmt->bind_param("sssdiss", $nombre, $marca, $modelo, $precio, $unidades, $detalles, $imagen);
 
         if ($stmt->execute()) {
             echo "<h3>Producto insertado exitosamente</h3>";

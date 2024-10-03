@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
-    <meta charset="UTF-8"/>
     <title>Practica 5</title>
 </head>
 <body>
@@ -17,10 +16,10 @@ $_element1 = "Variable válida";
 // myvar no es una variable valida porque no inicia con $
 
 echo "\$_myvar: $_myvar<br/>";
-echo "\$_7var: $_7var<br/>";
-echo "\$myvar: $myvar<br/>";
-echo "\$var7: $var7<br/>";
-echo "\$_element1: $_element1<br/>";
+echo "\$_7var: $_7var";
+echo "\$myvar: $myvar";
+echo "\$var7: $var7";
+echo "\$_element1: $_element1";
 
 // Liberar
 unset($_myvar, $_7var, $myvar, $var7, $_element1);
@@ -34,18 +33,18 @@ $b = "MySQL";
 $c = &$a;
 
 echo "\$a: $a<br/>";
-echo "\$b: $b<br/>";
-echo "\$c: $c<br/>";
+echo "\$b: $b";
+echo "\$c: $c";
 
 $a = "PHP server";
 $b = &$a;
 
-echo "<br/>Vuelve a mostrar el contenido:<br/>";
-echo "\$a: $a<br/>";
-echo "\$b: $b<br/>";
-echo "\$c: $c<br/>";
+echo "Vuelve a mostrar el contenido:";
+echo "\$a: $a";
+echo "\$b: $b";
+echo "\$c: $c";
 
-echo "<br/>Despues de reasignar y volver a mostrar el contenido a todas las se les asigno el texto PHP SERVER<br/>";
+echo "Despues de reasignar y volver a mostrar el contenido a todas las se les asigno el texto PHP SERVER";
 // Liberar
 unset($a, $b, $c);
 ?>
@@ -56,15 +55,14 @@ $a = "PHP5";
 echo "\$a: $a<br/>";
 $z[] = &$a;
 print_r($z) ;
-echo "<br/>";
 $b = "5a version de PHP";
-echo "\$b: $b<br/>";
+echo "\$b: $b";
 $c = $b * 10;
-echo "\$c: $c<br/>";
+echo "\$c: $c";
 $a .= $b;
-echo "\$a: $a<br/>";
+echo "\$a: $a";
 $b *= $c;
-echo "\$b: $b<br/>";
+echo "\$b: $b";
 $z[0] = "MySQL";
 print_r($z) ;
 // Liberar
@@ -77,15 +75,14 @@ $GLOBALS['a'] = "PHP5";
 echo $GLOBALS['a'] . "<br/>";
 $GLOBALS['z'][] = &$GLOBALS['a'];
 print_r($GLOBALS['z']);
-echo "<br/>";
 $GLOBALS['b'] = "5a version de PHP";
-echo $GLOBALS['b'] . "<br/>";
+echo $GLOBALS['b']  ;
 $GLOBALS['c'] = $GLOBALS['b'] * 10;
-echo $GLOBALS['c'] . "<br/>";
+echo $GLOBALS['c'] ;
 $GLOBALS['a'] .= $GLOBALS['b'];
-echo $GLOBALS['a'] . "<br/>";
+echo $GLOBALS['a'] ;
 $GLOBALS['b'] *= $GLOBALS['c'];
-echo $GLOBALS['b'] . "<br/>";
+echo $GLOBALS['b'] ;
 $GLOBALS['z'][0] = "MySQL";
 print_r($GLOBALS['z']);
 
@@ -99,11 +96,11 @@ unset($GLOBALS['a'], $GLOBALS['b'], $GLOBALS['c'], $GLOBALS['z']);
 $a = "7 personas";
 echo "\$a: $a<br/>";
 $b = (integer) $a;
-echo "\$b: $b<br/>";
+echo "\$b: $b";
 $a = "9E3";
-echo "\$a: $a<br/>";
+echo "\$a: $a";
 $c = (double) $a;
-echo "\$c: $c<br/>";
+echo "\$c: $c";
 
 // Liberar
 unset($a, $b, $c);
@@ -120,8 +117,8 @@ $f = ($a XOR $b);
 
 var_dump($a, $b, $c, $d, $e, $f);
 
-echo "<br/>Valor booleano de c: " . (int)$c . "<br/>";
-echo "Valor booleano de e: " . (int)$e . "<br/>";
+echo "<br/>Valor booleano de c: " . (int)$c ;
+echo "Valor booleano de e: " . (int)$e ;
 
 // Liberar 
 unset($a, $b, $c, $d, $e, $f);
@@ -130,8 +127,8 @@ unset($a, $b, $c, $d, $e, $f);
 <h1>Ejercicio 7</h1>
 <?php
 echo "Versión: " . $_SERVER['SERVER_SOFTWARE'] . "<br/>";
-echo "Nombre servidor: " . PHP_OS . "<br/>";
-echo "Idioma: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "<br/>";
+echo "Nombre servidor: " . PHP_OS ;
+echo "Idioma: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] ;
 
 ?>
 
