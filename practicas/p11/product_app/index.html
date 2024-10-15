@@ -9,46 +9,52 @@
     <!-- BARRA DE NAVEGACIÓN  -->
     <nav>
       <a href="#">Product App</a>
-      
-        <ul></ul>
-        <form>
-          <input name="search" id="search" type="search" placeholder="ID">
-          <button type="submit" onclick="buscarID(event)">Buscar</button>
-        </form>
+      <ul></ul>
+      <h1>BUSCAR PRODUCTOS</h1>
+      <!-- FORMULARIO DE BÚSQUEDA POR ID -->
+      <form id="search-form-id">
+        <input name="search" id="search" type="search" placeholder="Buscar por nombre, marca o detalles">
+      </form>
+
+      <!-- FORMULARIO DE BÚSQUEDA POR NOMBRE, MARCA O DETALLES -->
+      <form id="search-form-product">
+        <button type="submit" onclick="buscarProducto(event)">Buscar Producto</button>
+      </form>
     </nav>
 
+    <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
     <div>
-      <div>
-        <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
-        <form id="task-form">
-          <div>
-            <input type="text" id="name" placeholder="Nombre de producto">
-          </div>
-          <div>
-            <textarea id="description" cols="30" rows="10" placeholder="JSON de producto"></textarea>
-          </div>
-          <input type="hidden" id="taskId">
-          <button type="submit" onclick="agregarProducto(event)" >
-            Agregar Producto
-          </button>
-        </form>
-      </div>
 
-      <!-- TABLA  -->
-      <div>
-        <ul></ul>
+    <h1>AGREGAR PRODUCTOS</h1>
+      <p></p>
+      <form id="task-form">
+        <div>
+          <input type="text" id="name" placeholder="Nombre de producto">
+        </div>
+        <div>
+          <textarea id="description" cols="30" rows="10" placeholder="JSON de producto"></textarea>
+        </div>
+        <input type="hidden" id="taskId">
+        <button type="submit" onclick="agregarProducto(event)">Agregar Producto</button>
+      </form>
+    </div>
 
-        <table>
-          <thead>
-            <tr>
-              <td>Id</td>
-              <td>Nombre</td>
-              <td>Descripcion</td>
-            </tr>
-          </thead>
-          <tbody id="productos"></tbody>
-        </table>
-      </div>
+    <!-- TABLA DE PRODUCTOS -->
+    <div>
+      <ul></ul>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Id</td>
+            <td>Nombre</td>
+            <td>Descripción</td>
+          </tr>
+        </thead>
+        <tbody id="productos">
+          <!-- Aquí se mostrarán los resultados -->
+        </tbody>
+      </table>
     </div>
 
     <!-- Lógica del Frontend -->

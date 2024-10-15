@@ -63,8 +63,14 @@ function buscarID(e) {
 function buscarProducto(e) {
     e.preventDefault();
 
-    // SE OBTIENE EL TÉRMINO A BUSCAR
+    // SE OBTIENE EL TÉRMINO A BUSCAR DESDE EL INPUT CON ID "search"
     var busqueda = document.getElementById('search').value;
+
+    // SI NO HAY NADA QUE BUSCAR, MUESTRA UN MENSAJE Y DETIENE LA EJECUCIÓN
+    if (!busqueda) {
+        alert("Por favor ingresa un término de búsqueda.");
+        return;
+    }
 
     // SE CREA EL OBJETO DE CONEXIÓN ASÍNCRONA AL SERVIDOR
     var client = getXMLHttpRequest();
@@ -110,6 +116,7 @@ function buscarProducto(e) {
     };
     client.send("busqueda=" + encodeURIComponent(busqueda));
 }
+
 
 function agregarProducto(e) {
     e.preventDefault();
