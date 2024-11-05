@@ -7,13 +7,8 @@
         'message' => 'La consulta falló'
     );
     // SE VERIFICA HABER RECIBIDO EL ID
-<<<<<<< HEAD
-    if( isset($_POST['id']) ) {
-        $id = $_POST['id'];
-=======
     if( isset($_GET['id']) ) {
         $id = $_GET['id'];
->>>>>>> 582d7fbf6bac533394f7ca3b90a344f0693e13a1
         // SE REALIZA LA QUERY DE BÚSQUEDA Y AL MISMO TIEMPO SE VALIDA SI HUBO RESULTADOS
         $sql = "UPDATE productos SET eliminado=1 WHERE id = {$id}";
         if ( $conexion->query($sql) ) {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro al Concurso</title>
+    <style type="text/css">
+      ol, ul {
+        list-style-type: none;
+      }
+      fieldset {
+        border: 2px solid #ccc;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      legend {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Registro al Concurso &ldquo;Chidos mis Tenis&rdquo;</h1>
+
+    <p>¿Quieres cambiar tus viejos tenis por un par personalizado de Tenis Mike&#174;?<br><br>Justifica el por qué tus tenis se <em>tienen que</em> ir y tú puedes ser uno de los diez afortunados ganadores.</p>
+
+    <!-- Inicio del formulario -->
+    <form action="http://52.43.117.247/neo/classroom/tw/concurso.php" method="post">
+      
+      <!-- Información Personal -->
+      <fieldset>
+        <legend>Información Personal</legend>
+        <ul>
+          <li>Nombre: <input type="text" name="name"></li>
+          <li>Dirección de E-mail: <input type="email" name="email"></li>
+          <li>Número Telefónico: <input type="tel" name="phone"></li>
+          <li>Mis tenis son tan feos porque...<br>
+            <textarea name="reason" rows="4" cols="60" maxlength="250" placeholder="Explica por qué tus tenis son tan feos..."></textarea>
+          </li>
+        </ul>
+      </fieldset>
+
+      <!-- Diseño personalizado del Tenis -->
+      <fieldset>
+        <legend>Diseño personalizado del Tenis</legend>
+
+        <!-- Color -->
+        <fieldset>
+          <legend>Color <em>(escoge uno)</em>:</legend>
+          <ul>
+            <li><input type="radio" name="color" value="red" checked>Rojo</li>
+            <li><input type="radio" name="color" value="blue">Azul</li>
+            <li><input type="radio" name="color" value="black">Negro</li>
+            <li><input type="radio" name="color" value="silver">Plateado</li>
+          </ul>
+        </fieldset>
+
+        <!-- Características -->
+        <fieldset>
+          <legend>Características <em>(escoge tantas como quieras)</em>:</legend>
+          <ul>
+            <li><input type="checkbox" name="features[]" value="sparkly_laces">Cordones brillantes</li>
+            <li><input type="checkbox" name="features[]" value="metal_logo" checked>Logo metálico</li>
+            <li><input type="checkbox" name="features[]" value="light_up_soles">Suela luminosa</li>
+            <li><input type="checkbox" name="features[]" value="wifi">WiFi integrado</li>
+          </ul>
+        </fieldset>
+
+        <!-- Talla -->
+        <fieldset>
+          <legend>Talla</legend>
+          <p>Las medidas reflejan el estándar masculino:</p>
+          <select name="size" size="1">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+        </fieldset>
+
+      </fieldset>
+
+      <!-- Botones de submit y reset -->
+      <p><input type="submit" value="Enviar registro">
+      <input type="reset" value="Restablecer"></p>
+    
+    </form>
+    <!-- Fin del formulario -->
+
+  </body>
+</html>
