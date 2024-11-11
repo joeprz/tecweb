@@ -2,7 +2,7 @@
     $conexion = @mysqli_connect(
         'localhost',
         'root',
-        'gardenia1115',
+        '',
         'marketzone'
     );
 
