@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CatalogoVOD>
+    <cuenta>
+        <correo></correo>
+        <perfiles>
+            <perfil>
+                <usuario></usuario>
+                <idioma></idioma>
+            </perfil>
+        </perfiles>
+    </cuenta>
+    
+    <contenido>
+        <peliculas>
+            <genero>
+                <nombre></nombre>
+                <titulo>
+                    <nombre></nombre>
+                    <duracion></duracion>
+                </titulo>
+            </genero>
+             
+        </peliculas>
+        
+        <programas>
+            <genero>
+                <nombre></nombre>
+                <titulo>
+                    <nombre></nombre>
+                    <duracion></duracion>
+                </titulo>
+                
+            </genero>
+            
+        </programas>
+    </contenido>
+    
+</CatalogoVOD>
