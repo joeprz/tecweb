@@ -1,120 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Catalogo>
-    <cuenta>
-        <correo>perez_jr4@hotmail.com</correo>
+    <cuenta correo="perez_jr4@hotmail.com">
         <perfiles>
-            <perfil>
-                <usuario>Joeprz</usuario>
-                <idioma>Espanol</idioma>
-            </perfil>
-            <perfil>
-                <usuario>PerCue</usuario>
-                <idioma>Espanol</idioma>
-            </perfil>
+            <perfil usuario="Joeprz" idioma="Espanol" />
+            <perfil usuario="PerCue" idioma="Espanol" />
         </perfiles>
     </cuenta>
     
     <contenido>
         <peliculas>
-            <genero>
-                <nombre>Comedia</nombre>
-                <titulo>
-                    <nombre>Son como niños</nombre>
-                    <duracion>2 horas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Son como niños 2</nombre>
-                    <duracion>1 hora 20 minutos</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Una esposa de mentira</nombre>
-                    <duracion>2 horas 20 min</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Click</nombre>
-                    <duracion>1 hora 45 minutos</duracion>
-                </titulo>
-
-                
+            <genero nombre="Comedia">
+                <titulo nombre="Son como niños" duracion="2 horas" />
+                <titulo nombre="Son como niños 2" duracion="1 hora 20 minutos" />
+                <titulo nombre="Una esposa de mentira" duracion="2 horas 20 min" />
+                <titulo nombre="Click" duracion="1 hora 45 minutos" />
             </genero>
 
-            <genero>
-                <nombre>Terror</nombre>
-                <titulo>
-                    <nombre>Saw</nombre>
-                    <duracion>1 hora 10 min</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Scream</nombre>
-                    <duracion>2 horas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>El titere</nombre>
-                    <duracion>1 hora 32 minutos</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Actividad paranormal</nombre>
-                    <duracion>2 horas 45 minutos</duracion>
-                </titulo>
+            <genero nombre="Terror">
+                <titulo nombre="Saw" duracion="1 hora 10 min" />
+                <titulo nombre="Scream" duracion="2 horas" />
+                <titulo nombre="El titere" duracion="1 hora 32 minutos" />
+                <titulo nombre="Actividad paranormal" duracion="2 horas 45 minutos" />
             </genero>
-             
         </peliculas>
         
         <programas>
-            <genero>
-                <nombre>Ciencia Ficcion</nombre>
-                <titulo>
-                    <nombre>Stranger Things</nombre>
-                    <duracion>3 temporasas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Sabrina</nombre>
-                    <duracion>2 temporadas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Black mirror</nombre>
-                    <duracion>5 temporadas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Fallout</nombre>
-                    <duracion>1 temporada</duracion>
-                </titulo>
+            <genero nombre="Ciencia Ficcion">
+                <titulo nombre="Stranger Things" duracion="3 temporadas" />
+                <titulo nombre="Sabrina" duracion="2 temporadas" />
+                <titulo nombre="Black mirror" duracion="5 temporadas" />
+                <titulo nombre="Fallout" duracion="1 temporada" />
             </genero>
 
-            <genero>
-                <nombre>Anime</nombre>
-                <titulo>
-                    <nombre>Demon slayer</nombre>
-                    <duracion>3 temporadas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Jujutsu kaisen</nombre>
-                    <duracion>2 temporadas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>YU GI OH</nombre>
-                    <duracion>8 temporadas</duracion>
-                </titulo>
-
-                <titulo>
-                    <nombre>Dragon ball</nombre>
-                    <duracion>8 temporadas</duracion>
-                </titulo>
+            <genero nombre="Anime">
+                <titulo nombre="Demon slayer" duracion="3 temporadas" />
+                <titulo nombre="Jujutsu kaisen" duracion="2 temporadas" />
+                <titulo nombre="YU GI OH" duracion="8 temporadas" />
+                <titulo nombre="Dragon ball" duracion="8 temporadas" />
             </genero>
-            
         </programas>
     </contenido>
-    
 </Catalogo>
