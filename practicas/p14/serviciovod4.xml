@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Catalogo SYSTEM "serviciovod_ep.dtd">
+<Catalogo>
+    <cuenta correo="perez_jr4@hotmail.com">
+        <perfiles>
+            <perfil usuario="Joeprz" idioma="Espanol" />
+            <perfil usuario="PerCue" idioma="Espanol" />
+        </perfiles>
+    </cuenta>
+    
+    <contenido>
+        <peliculas region="MEX">
+            <genero nombre="Comedia">
+                <titulo nombre="Son como niños" duracion="2 horas" />
+                <titulo nombre="Son como niños 2" duracion="1 hora 20 minutos" />
+                <titulo nombre="Una esposa de mentira" duracion="2 horas 20 min" />
+                <titulo nombre="Click" duracion="1 hora 45 minutos" />
+            </genero>
+
+            <genero nombre="Terror">
+                <titulo nombre="Saw" duracion="1 hora 10 min" />
+                <titulo nombre="Scream" duracion="2 horas" />
+                <titulo nombre="El titere" duracion="1 hora 32 minutos" />
+                <titulo nombre="Actividad paranormal" duracion="2 horas 45 minutos" />
+            </genero>
+        </peliculas>
+        
+        <series region="USA">
+            <genero nombre="Ciencia Ficcion">
+                <titulo nombre="Stranger Things" duracion="3 temporadas" />
+                <titulo nombre="Sabrina" duracion="2 temporadas" />
+                <titulo nombre="Black mirror" duracion="5 temporadas" />
+                <titulo nombre="Fallout" duracion="1 temporada" />
+            </genero>
+
+            <genero nombre="Anime">
+                <titulo nombre="Demon slayer" duracion="3 temporadas" />
+                <titulo nombre="Jujutsu kaisen" duracion="2 temporadas" />
+                <titulo nombre="YU GI OH" duracion="8 temporadas" />
+                <titulo nombre="Dragon ball" duracion="8 temporadas" />
+            </genero>
+        </series>
+    </contenido>
+</Catalogo>

@@ -1,20 +1,21 @@
+<!ENTITY % region-attr "region (MEX|USA|ESP|ARG|KOR) 'USA'">
+
 <!ELEMENT Catalogo (cuenta, contenido)>
 <!ELEMENT cuenta (perfiles)>
-
 <!ATTLIST cuenta
     correo CDATA #REQUIRED>
 <!ELEMENT perfiles (perfil+)>
 <!ELEMENT perfil EMPTY>
-
 <!ATTLIST perfil
     usuario CDATA #REQUIRED
     idioma CDATA #REQUIRED>
 
-<!ELEMENT contenido (peliculas, programas)>
+<!ELEMENT contenido (peliculas, series)>
 <!ELEMENT peliculas (genero+)>
-<!ELEMENT programas (genero+)>
+<!ATTLIST peliculas %region-attr;>
+<!ELEMENT series (genero+)>
+<!ATTLIST series %region-attr;>
 <!ELEMENT genero (titulo+)>
-
 <!ATTLIST genero
     nombre CDATA #REQUIRED>
 <!ELEMENT titulo EMPTY>
